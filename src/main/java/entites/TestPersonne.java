@@ -31,5 +31,6 @@ public class TestPersonne {
         personne2.nom = "Monkey D.";
         personne2.prenom = "Luffy";
         personne2.adresse = adressePersonne2;
+        System.out.println(personne2.nom + " " + personne2.prenom);
     }
 }
