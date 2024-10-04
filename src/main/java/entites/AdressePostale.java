@@ -6,6 +6,7 @@ public class AdressePostale {
     int codePostal;
     String ville;
 
+    // avec l'IDE, on peut faire clic droit -> Generate -> Constructor
     public AdressePostale(
             short numeroRue,
             String libelleRue,

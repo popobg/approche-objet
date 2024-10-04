@@ -14,8 +14,7 @@ public class TestPersonne {
 
         // constructeur à 2 paramètres
         Personne personne2 = new Personne("Uzumaki", "Naruto");
-        AdressePostale adressePersonne2 = new AdressePostale((short)8, "Rue du chapiteau", 86000, "Poitiers");
-        personne2.adresse = adressePersonne2;
+        personne2.adresse = new AdressePostale((short)8, "Rue du chapiteau", 86000, "Poitiers");
 
         // accès aux attributs
         System.out.println(personne1.nom + " " + personne1.prenom);
