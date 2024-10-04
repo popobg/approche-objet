@@ -17,4 +17,9 @@ public class AdressePostale {
         this.codePostal = codePostal;
         this.ville = ville;
     }
+
+    public int getNumeroDepartement() {
+        // division entière car on manipule un type int (et non un type décimal)
+        return this.codePostal / 1000;
+    }
 }
