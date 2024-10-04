@@ -22,4 +22,11 @@ public class AdressePostale {
         // division entière car on manipule un type int (et non un type décimal)
         return this.codePostal / 1000;
     }
+
+    // print automatiquement dans la console les variables d'instance
+    // de la classe.
+    // clic droit -> generate -> toString
+    public String toString() {
+        return this.numeroRue + ", " + this.libelleRue + ", " + this.codePostal + ", " + this.ville;
+    }
 }

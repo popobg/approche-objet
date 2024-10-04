@@ -53,4 +53,13 @@ public class Personne {
     public AdressePostale getAdresse() {
         return this.adresse;
     }
+
+    @Override
+    public String toString() {
+        return "Personne{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", adresse=" + adresse +
+                '}';
+    }
 }
