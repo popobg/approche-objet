@@ -1,5 +1,6 @@
 package entites;
 
+// rend accessible la classe Personne dans cette classe
 import entites2.Personne;
 
 public class TestPersonne {
