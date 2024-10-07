@@ -2,12 +2,12 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
     // composé de caractères alphanumériques
-    private final String numeroCompte;
-    private double solde;
+    protected final String numeroCompte;
+    protected double solde;
 
-    public Compte(String numeroCompte, double solde_compte) {
+    public Compte(String numeroCompte, double soldeCompte) {
         this.numeroCompte = numeroCompte;
-        this.solde = solde_compte;
+        this.solde = soldeCompte;
     }
 
     @Override
