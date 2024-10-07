@@ -4,13 +4,13 @@ import fr.diginamic.operations.Operations;
 
 public class TestOperations {
     public static void main(String[] args) {
-        double firstNumber = 9.5;
-        double secondNumber = 7.8;
+        double premierNombre = 9.5;
+        double secondNombre = 7.8;
 
-        System.out.println(firstNumber + " + " + secondNumber + " = " + Operations.calcul(firstNumber, secondNumber, '+'));
-        System.out.println(firstNumber + " - " + secondNumber + " = " + Operations.calcul(firstNumber, secondNumber, '-'));
-        System.out.println(firstNumber + " * " + secondNumber + " = " + Operations.calcul(firstNumber, secondNumber, '*'));
-        System.out.println(firstNumber + " / " + secondNumber + " = " + Operations.calcul(firstNumber, secondNumber, '/'));
-        System.out.println("Test mauvais opérateur : " + Operations.calcul(firstNumber, secondNumber, 'u'));
+        System.out.println(premierNombre + " + " + secondNombre + " = " + Operations.calcul(premierNombre, secondNombre, '+'));
+        System.out.println(premierNombre + " - " + secondNombre + " = " + Operations.calcul(premierNombre, secondNombre, '-'));
+        System.out.println(premierNombre + " * " + secondNombre + " = " + Operations.calcul(premierNombre, secondNombre, '*'));
+        System.out.println(premierNombre + " / " + secondNombre + " = " + Operations.calcul(premierNombre, secondNombre, '/'));
+        System.out.println("Test mauvais opérateur : " + Operations.calcul(premierNombre, secondNombre, 'u'));
     }
 }
