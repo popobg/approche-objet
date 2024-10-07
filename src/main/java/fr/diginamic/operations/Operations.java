@@ -8,7 +8,7 @@ public class Operations {
      * @param a premier nombre décimal de l'opération
      * @param b deuxième nombre décimal de l'opération
      * @param operateur caractère représentant l'opérateur (+, -, *, /)
-     * @return le résultat de l'opération, ou 0 si l'opérateur n'est pas reconnu
+     * @return un nombre décimal, résultat de l'opération, ou 0 si l'opérateur n'est pas reconnu
      */
     public static double calcul(double a, double b, char operateur) {
         if (operateur == '+') {
