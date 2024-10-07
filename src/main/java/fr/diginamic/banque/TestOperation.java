@@ -1,6 +1,7 @@
 package fr.diginamic.banque;
 
 import java.text.DecimalFormat;
+import java.util.Objects;
 
 import fr.diginamic.banque.entites.Credit;
 import fr.diginamic.banque.entites.Debit;
@@ -10,7 +11,7 @@ public class TestOperation {
     public static void main(String[] args) {
         Operation[] operations = {
                 new Credit("25/10/2024", 12.55),
-                new Debit("13/08/2023", 80),
+                new Credit("13/08/2023", 80),
                 new Credit("05/02/2024", 16.99),
                 new Debit("02/06/2000", 2.5)
         };
@@ -22,7 +23,7 @@ public class TestOperation {
             System.out.println(ope.getType());
             System.out.println(ope);
 
-            if(ope.getType() == "CREDIT") {
+            if(Objects.equals(ope.getType(), "CREDIT")) {
                 sum += ope.getMontantOperation();
             }
             else {
