@@ -1,5 +1,7 @@
 package fr.diginamic.banque;
 
+import java.util.Arrays;
+
 import fr.diginamic.banque.entites.Compte;
 import fr.diginamic.banque.entites.CompteTaux;
 
@@ -10,6 +12,12 @@ public class TestBanque {
 
         Compte[] comptes = { compteCourant, compteTaux };
 
+        System.out.println();
+        // print le tableau
+        System.out.println(Arrays.toString(comptes));
+
+        System.out.println();
+        // print chaque élément du tableau
         for (Compte compte : comptes) {
             System.out.println(compte);
         }
