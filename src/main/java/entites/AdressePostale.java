@@ -26,6 +26,7 @@ public class AdressePostale {
     // print automatiquement dans la console les variables d'instance
     // de la classe.
     // clic droit -> generate -> toString
+    @Override
     public String toString() {
         return this.numeroRue + ", " + this.libelleRue + ", " + this.codePostal + ", " + this.ville;
     }
