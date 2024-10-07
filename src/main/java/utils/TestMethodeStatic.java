@@ -9,7 +9,8 @@ public class TestMethodeStatic {
         int a = 9;
         int b = -3;
 
-        int max = Math.max(a, b);
+        // Math.max works too
+        int max = Integer.max(a, b);
         System.out.printf("Le maximum entre %s et %s est %s.", a, b, max);
     }
 }
