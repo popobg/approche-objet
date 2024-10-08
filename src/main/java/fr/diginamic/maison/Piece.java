@@ -4,6 +4,7 @@ public abstract class Piece {
     protected double superficie;
     // 0 = RDC
     protected short nombreEtages;
+    protected String type;
 
     public Piece(short nombreEtages, double superficie) {
         this.nombreEtages = nombreEtages;
@@ -26,5 +27,7 @@ public abstract class Piece {
         this.superficie = superficie;
     }
 
-    public abstract String getType();
+    public String getType() {
+        return this.type;
+    }
 }
