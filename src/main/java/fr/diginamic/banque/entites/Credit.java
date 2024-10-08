@@ -6,13 +6,15 @@ public class Credit extends Operation {
     }
 
     @Override
+    public String getType() {
+        return "CREDIT";
+    }
+
+    @Override
     public String toString() {
         String operation = super.toString();
         return operation.replace("Operation{", "Crédit{");
     }
 
-    @Override
-    public String getType() {
-        return "CREDIT";
-    }
+
 }

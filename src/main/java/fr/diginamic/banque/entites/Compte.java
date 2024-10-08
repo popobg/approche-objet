@@ -5,16 +5,16 @@ public class Compte {
     protected final String numeroCompte;
     protected double solde;
 
-    public Compte(String numeroCompte, double soldeCompte) {
+    public Compte(String numeroCompte, double solde) {
         this.numeroCompte = numeroCompte;
-        this.solde = soldeCompte;
+        this.solde = solde;
     }
 
     @Override
     public String toString() {
         return "Compte{" +
                 "numeroCompte='" + numeroCompte + '\'' +
-                ", soldeCompte=" + solde +
+                ", solde=" + solde +
                 '}';
     }
 

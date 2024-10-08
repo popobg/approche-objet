@@ -6,12 +6,12 @@ public class Debit extends Operation {
     }
 
     @Override
-    public String toString() {
-        return super.toString();
+    public String getType() {
+        return "DEBIT";
     }
 
     @Override
-    public String getType() {
-        return "DEBIT";
+    public String toString() {
+        return super.toString();
     }
 }
