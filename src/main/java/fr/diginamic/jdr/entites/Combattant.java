@@ -1,6 +1,6 @@
 package fr.diginamic.jdr.entites;
 
-import fr.diginamic.jdr.Tools.GenerationAleatoire;
+import fr.diginamic.jdr.tools.GenerationAleatoire;
 
 // classe abstraite : on ne peut pas en créer d'instance
 public abstract class Combattant {

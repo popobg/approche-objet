@@ -1,8 +1,8 @@
 package fr.diginamic.jdr;
 
-import fr.diginamic.jdr.Tools.GenerationAleatoire;
-import fr.diginamic.jdr.Tools.InputTools;
-import fr.diginamic.jdr.Tools.Wait;
+import fr.diginamic.jdr.tools.GenerationAleatoire;
+import fr.diginamic.jdr.tools.InputTools;
+import fr.diginamic.jdr.tools.Wait;
 import fr.diginamic.jdr.entites.Creature;
 import fr.diginamic.jdr.entites.Personnage;
 import fr.diginamic.jdr.services.CombatServices;

@@ -1,4 +1,4 @@
-package fr.diginamic.jdr.Tools;
+package fr.diginamic.jdr.tools;
 
 import fr.diginamic.jdr.entites.Creature;
 import fr.diginamic.jdr.entites.Gobelin;

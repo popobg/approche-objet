@@ -1,4 +1,4 @@
-package fr.diginamic.jdr.Tools;
+package fr.diginamic.jdr.tools;
 
 import java.util.Scanner;
 

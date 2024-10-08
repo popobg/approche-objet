@@ -1,6 +1,6 @@
 package fr.diginamic.jdr.services;
 
-import fr.diginamic.jdr.Tools.Wait;
+import fr.diginamic.jdr.tools.Wait;
 import fr.diginamic.jdr.entites.Creature;
 import fr.diginamic.jdr.entites.Personnage;
 
