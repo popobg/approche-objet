@@ -19,4 +19,20 @@ public class Pigiste extends Intervenant {
     public String getStatut() {
         return "PIGISTE";
     }
+
+    public int getNbJoursTravaillesParMois() {
+        return nbJoursTravaillesParMois;
+    }
+
+    public void setNbJoursTravaillesParMois(int nbJoursTravaillesParMois) {
+        this.nbJoursTravaillesParMois = nbJoursTravaillesParMois;
+    }
+
+    public double getRemunerationJournaliere() {
+        return remunerationJournaliere;
+    }
+
+    public void setRemunerationJournaliere(double remunerationJournaliere) {
+        this.remunerationJournaliere = remunerationJournaliere;
+    }
 }

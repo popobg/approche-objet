@@ -17,4 +17,8 @@ public class Salarie extends Intervenant {
     public String getStatut() {
         return "SALARIE";
     }
+
+    public void setSalaireMensuel(double salaireMensuel) {
+        this.salaireMensuel = salaireMensuel;
+    }
 }
