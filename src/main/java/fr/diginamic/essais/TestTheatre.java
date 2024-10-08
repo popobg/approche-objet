@@ -11,11 +11,11 @@ public class TestTheatre {
 
         // print true si on a pu inscrire tous les clients donnés
         // en paramètres à la méthode
-        System.out.println(theatre.InscrireClients(50, 8.5));
-        System.out.println(theatre.InscrireClients(10, 8.5));
-        System.out.println(theatre.InscrireClients(10, 8.5));
-        System.out.println(theatre.InscrireClients(10, 8.5));
-        System.out.println(theatre.InscrireClients(10, 8.5));
+        System.out.println("Tous les clients ont été inscrits : " + theatre.InscrireClients(10, 8.5));
+        System.out.println("Tous les clients ont été inscrits : " + theatre.InscrireClients(10, 8.5));
+        System.out.println("Tous les clients ont été inscrits : " + theatre.InscrireClients(10, 8.5));
+        System.out.println("Tous les clients ont été inscrits : " + theatre.InscrireClients(10, 8.5));
+        System.out.println("Tous les clients ont été inscrits : " + theatre.InscrireClients(10, 8.5));
 
         System.out.println();
         System.out.println("Nombre de clients inscrits : " + theatre.getNbClientsInscrits());

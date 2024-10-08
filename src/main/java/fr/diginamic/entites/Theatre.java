@@ -39,7 +39,7 @@ public class Theatre {
             this.afficherMessageErreur("Le théâtre n'accueille plus de spectateur.");
         }
         
-        return nbClientsAInscrire > 0 ? false : true;
+        return nbClientsAInscrire == 0;
     }
 
     private void afficherMessageErreur(String message) {
