@@ -21,15 +21,6 @@ public class TestListeInt {
         // Supprime la première occurence de l'objet donné trouvée dans la liste
         listeNombres.remove(min);
 
-        // Alternative avec une boucle et en utilisant l'index
-//        int minIndex = listeNombres.indexOf(min);
-//        for (int i = 0; i < listeNombres.size(); i++) {
-//            if (i == minIndex) {
-//                listeNombres.remove(min);
-//                break;
-//            }
-//        }
-
         afficherListNombre(listeNombres, "Après suppression du minimum, les éléments de la liste sont les suivants : ");
 
         for (int i = 0; i < listeNombres.size(); i++) {
