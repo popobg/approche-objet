@@ -6,7 +6,7 @@ import java.util.List;
 
 public class TestListeInt {
     public static void main(String[] args) {
-        ArrayList<Integer> listeNombres = new ArrayList<Integer>();
+        ArrayList<Integer> listeNombres = new ArrayList<>();
         Collections.addAll(listeNombres, -1, 5, 7, 3, -2, 4, 8, 5);
 
         afficherListNombre(listeNombres, "Les éléments de la liste sont les suivants : ");

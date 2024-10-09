@@ -1,6 +1,8 @@
 package listes;
 
 import listes.entites.Ville;
+import tri.utils.ComparatorHabitant;
+import tri.utils.ComparatorNom;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,8 +11,8 @@ import java.util.List;
 
 public class TestVilles {
     public static void main(String[] args) {
-        List<Ville> villes = new ArrayList<Ville>();
-        Collections.addAll(villes,
+        List<Ville> listeVilles = new ArrayList<>();
+        Collections.addAll(listeVilles,
                 new Ville(343000, "Nice"),
                 new Ville(47800, "Carcassonne"),
                 new Ville(53400, "Narbonne"),
@@ -21,20 +23,29 @@ public class TestVilles {
                 new Ville(40600, "Tarbes"));
 
         // Deux types d'écriture de la lambda différentes
-        Ville villePlusPeuplée = Collections.max(villes, Comparator.comparingInt(v -> v.getNbHabitants()));
+        Ville villePlusPeuplée = Collections.max(listeVilles, Comparator.comparingInt(v -> v.getNbHabitants()));
         System.out.println("Ville la plus peuplée : " + villePlusPeuplée);
 
-        Ville villeMoinsPeuplée = Collections.min(villes, Comparator.comparingInt(Ville::getNbHabitants));
+        Ville villeMoinsPeuplée = Collections.min(listeVilles, Comparator.comparingInt(Ville::getNbHabitants));
         System.out.println("Ville la moins peuplée : " + villeMoinsPeuplée);
-        villes.remove(villeMoinsPeuplée);
+        listeVilles.remove(villeMoinsPeuplée);
 
-        for (Ville v : villes) {
+        for (Ville v : listeVilles) {
             if (v.getNbHabitants() > 100000) {
                 v.setNom(v.getNom().toUpperCase());
             }
         }
-
         System.out.println();
-        villes.forEach(System.out::println);
+
+        // Utilisation de classes implémentant utilisant Comparator
+        Collections.sort(listeVilles, new ComparatorHabitant());
+        System.out.println("Voici les villes triées par ordre décroissant de densité de population :");
+        listeVilles.forEach(System.out::println);
+
+        System.out.println("\n");
+
+        Collections.sort(listeVilles, new ComparatorNom());
+        System.out.println("Voici les villes triées par ordre alphabétique :");
+        listeVilles.forEach(System.out::println);
     }
 }

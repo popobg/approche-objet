@@ -4,7 +4,7 @@ import java.util.*;
 
 public class TestListeString {
     public static void main(String[] args) {
-        List<String> villes = new ArrayList<String>();
+        List<String> villes = new ArrayList<>();
         Collections.addAll(villes, "Nice", "Carcassonne", "Narbonne", "Lyon", "Foix", "Pau", "Marseille", "Tarbes");
 
         // réalisable également avec une boucle et deux variables (lettresMax
@@ -19,19 +19,22 @@ public class TestListeString {
         // On peut aussi écrire ville.replaceAll(String::toUpperCase)
         villes.replaceAll(ville -> ville.toUpperCase());
 
+        // Alternative en une ligne : villes.removeIf(ville -> ville.charAt(0) == 'N');
+        // ou villes.removeIf(ville -> ville.startsWith("N"));
         Iterator<String> iteratorVilles = villes.iterator();
 
         while(iteratorVilles.hasNext()) {
             String ville = iteratorVilles.next();
 
-            if (ville.charAt(0) != 'N') {
+            if (ville.charAt(0) == 'N') {
                 iteratorVilles.remove();
             }
         }
 
-        System.out.print("Les villes commençant par 'N' dans la liste sont : ");
+        Collections.sort(villes);
+        System.out.print("Les villes ne commençant pas par 'N' dans la liste sont : ");
         for (String ville : villes) {
             System.out.print(ville + " ");
-        }
+        };
     }
 }
