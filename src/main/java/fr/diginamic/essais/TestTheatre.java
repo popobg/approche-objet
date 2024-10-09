@@ -19,6 +19,6 @@ public class TestTheatre {
 
         System.out.println();
         System.out.println("Nombre de clients inscrits : " + theatre.getNbClientsInscrits());
-        System.out.println("Recette totale: " + theatre.getRecetteTotale());
+        System.out.println("Recette totale: " + theatre.getRecetteTotale() + "€.");
     }
 }
