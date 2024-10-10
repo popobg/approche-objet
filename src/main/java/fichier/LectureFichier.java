@@ -17,7 +17,7 @@ public class LectureFichier {
         // s'adapte au chemin dans lequel l'utilisateur stocke le projet.
         String repertoireActuel = Paths.get(".").toAbsolutePath().toString();
         String repertoireActuelModifie = repertoireActuel.substring(0, repertoireActuel.length() - 1);
-        // ajouter le chemin du fichier recherché la racine du projet
+        // ajouter le chemin du fichier depuis la racine du projet
         String recensementStringPath = repertoireActuelModifie + "src\\main\\java\\fichier\\recensement.csv";
 
         /*
