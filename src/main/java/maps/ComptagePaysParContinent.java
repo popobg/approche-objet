@@ -22,13 +22,11 @@ public class ComptagePaysParContinent {
         HashMap<String, Integer> mapContinent = new HashMap<>();
 
         for (Pays pays : listePays) {
-            if (mapContinent.containsKey(pays.getContinent())) {
-                mapContinent.put(pays.getContinent(), mapContinent.get(pays.getContinent()) + 1);
-            }
-            else {
-                mapContinent.put(pays.getContinent(), 1);
-            }
+            String continent = pays.getContinent();
+            mapContinent.put(continent, mapContinent.getOrDefault(continent, 0) + 1);
         }
+
+
 
         System.out.println("Le nombre de pays par continent est : ");
         for (String continent: mapContinent.keySet()) {
