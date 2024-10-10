@@ -16,11 +16,7 @@ public class Commune {
 
     @Override
     public String toString() {
-        return "Commune : " +
-                "code département = " + codeDepartement +
-                ", nom = '" + nom + '\'' +
-                ", région = '" + region + '\'' +
-                ", population totale = " + popTotale;
+        return nom + ";" + codeDepartement + ";" + region + ';' + popTotale + ";";
     }
 
     public String getCodeDepartement() {

@@ -63,8 +63,7 @@ public class LectureFichier {
 
         for (Commune commune : communes) {
             if (commune.getPopTotale() >= 25000) {
-                String ligne = commune.getNom() + ";" + commune.getCodeDepartement() + ";" + commune.getRegion() + ";" + commune.getPopTotale() + ";";
-                grandesCommunesListe.add(ligne);
+                grandesCommunesListe.add(commune.toString());
             }
         }
 
