@@ -23,8 +23,8 @@ public class TestVilles {
                 new Ville(40600, "Tarbes"));
 
         // Deux types d'écriture de la lambda différentes
-        Ville villePlusPeuplée = Collections.max(listeVilles, Comparator.comparingInt(v -> v.getNbHabitants()));
-        System.out.println("Ville la plus peuplée : " + villePlusPeuplée);
+        Ville villePlusPeuplee = Collections.max(listeVilles, Comparator.comparingInt(v -> v.getNbHabitants()));
+        System.out.println("Ville la plus peuplée : " + villePlusPeuplee);
 
         Ville villeMoinsPeuplée = Collections.min(listeVilles, Comparator.comparingInt(Ville::getNbHabitants));
         System.out.println("Ville la moins peuplée : " + villeMoinsPeuplée);
