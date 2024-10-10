@@ -21,7 +21,7 @@ public class LectureFichier {
         String recensementStringPath = repertoireActuelModifie + "src\\main\\java\\fichier\\recensement.csv";
 
         /*
-        Si le code précédent ne fonctionne pas, indiquer simplement comme
+        Si le code précédent ne fonctionne pas, indiquez simplement comme
         paramètre de la méthode `get()` le path absolu vers le fichier
         sur votre machine.
          */
