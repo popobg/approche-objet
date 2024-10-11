@@ -26,8 +26,6 @@ public class ComptagePaysParContinent {
             mapContinent.put(continent, mapContinent.getOrDefault(continent, 0) + 1);
         }
 
-
-
         System.out.println("Le nombre de pays par continent est : ");
         for (String continent: mapContinent.keySet()) {
             System.out.println("Clé : " + continent);
