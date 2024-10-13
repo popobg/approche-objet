@@ -26,9 +26,9 @@ public class TestVilles {
         Ville villePlusPeuplee = Collections.max(listeVilles, Comparator.comparingInt(v -> v.getNbHabitants()));
         System.out.println("Ville la plus peuplée : " + villePlusPeuplee);
 
-        Ville villeMoinsPeuplée = Collections.min(listeVilles, Comparator.comparingInt(Ville::getNbHabitants));
-        System.out.println("Ville la moins peuplée : " + villeMoinsPeuplée);
-        listeVilles.remove(villeMoinsPeuplée);
+        Ville VilleMoinsPeuplee = Collections.min(listeVilles, Comparator.comparingInt(Ville::getNbHabitants));
+        System.out.println("Ville la moins peuplée : " + VilleMoinsPeuplee);
+        listeVilles.remove(VilleMoinsPeuplee);
 
         for (Ville v : listeVilles) {
             if (v.getNbHabitants() > 100000) {
