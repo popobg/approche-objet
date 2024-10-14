@@ -4,13 +4,9 @@ public class TestStringBuilder {
     public static void main(String[] args) {
         long debutBuilder = System.currentTimeMillis();
         StringBuilder builder = new StringBuilder();
-//        String build = "";
-//        String stringConcat = "";
 
         for (int i = 0; i <= 100_000; i++) {
             builder.append(i);
-//            build += i;
-//            stringConcat = stringConcat.concat(Integer.toString(i));
         }
 
         long finBuilder = System.currentTimeMillis();
