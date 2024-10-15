@@ -7,6 +7,7 @@ public class TestEquals {
         Ville ville1 = new Ville(900_000, "Paris");
         Ville ville2 = new Ville(900_000, "Paris");
         Ville ville3 = new Ville(900_000, "Marseille");
+        Ville ville4 = ville1;
 
         String str = "Ceci n'est pas une ville";
 
@@ -17,5 +18,6 @@ public class TestEquals {
         System.out.println();
         System.out.println(ville1 == ville2);           // false
         System.out.println(ville1 == ville3);           // false
+        System.out.println(ville1 == ville4);           // true
     }
 }
